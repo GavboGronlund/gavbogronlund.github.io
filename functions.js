@@ -14,12 +14,30 @@ $(document).ready(function(){
 	        easing: 'swing', // or "linear"
 	                         // use jQuery UI or Easing plugin for more options
 	        step: function() {
-	            $('#background').css({ "filter": "grayscale(100%) blur("+this.blurRadius+"px)", "-webkit-filter": "grayscale(100%) blur("+this.blurRadius+"px)"  }, "medium");
+	            $('#background').css({ "filter": "blur("+this.blurRadius+"px)", "-webkit-filter": "blur("+this.blurRadius+"px)"  }, "medium");
+	            //$('#background').css({ "filter": "grayscale(100%) blur("+this.blurRadius+"px)", "-webkit-filter": "grayscale(100%) blur("+this.blurRadius+"px)"  }, "medium");
 	        }
 	    });
 	}
 	//});
 
+	
+	var backgroundDice = Math.floor(Math.random() * 3) + 1;
+	console.log(backgroundDice);
+	switch(backgroundDice) {
+	    case 1:
+	        document.getElementById("background").src="gavbo1.jpg";
+	        break;
+	    case 2:
+	        document.getElementById("background").src="gavbo2.jpg";
+	        
+	        break;
+	    case 3:
+	        document.getElementById("background").src="gavbo3.jpg";
+	        
+	        break;
+
+	}
 });	
 
 			
