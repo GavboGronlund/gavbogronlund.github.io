@@ -14,7 +14,7 @@ $(document).ready(function(){
 	        easing: 'swing', // or "linear"
 	                         // use jQuery UI or Easing plugin for more options
 	        step: function() {
-	            $('#background').css({ "filter": "grayscale(100%) blur("+this.blurRadius+"px)"  }, "medium");
+	            $('#background').css({ "filter": "grayscale(100%) blur("+this.blurRadius+"px)", "-webkit-filter": "grayscale(100%) blur("+this.blurRadius+"px)"  }, "medium");
 	        }
 	    });
 	}
