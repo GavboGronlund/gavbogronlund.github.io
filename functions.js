@@ -2,14 +2,6 @@
 // wwww : 195.74.38.62
 var check = 0;
 
-$(document).ready(function(){
-$("h1").hover(
-function() {
-$("h1").stop().animate({"opacity": "0.5"}, "medium");
-});
-
-});
-
 
 $(document).ready(function(){
 	//$('body').click(
