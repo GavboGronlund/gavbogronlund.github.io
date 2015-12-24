@@ -22,23 +22,13 @@ $(document).ready(function(){
 	//});
 
 	
-	var backgroundDice = Math.floor(Math.random() * 3) + 1;
+	var backgroundDice = Math.floor(Math.random() * 11) + 1;
 	console.log(backgroundDice);
-	switch(backgroundDice) {
-	    case 1:
-	        document.getElementById("background").src="gavbo1.jpg";
-	        break;
-	    case 2:
-	        document.getElementById("background").src="gavbo2.jpg";
-	        
-	        break;
-	    case 3:
-	        document.getElementById("background").src="gavbo3.jpg";
-	        
-	        break;
-
-	}
+	document.getElementById("background").src="images/gavbo"+backgroundDice+".jpg";
 });	
+
+
+
 
 			
 
